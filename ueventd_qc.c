@@ -48,10 +48,10 @@ int main(int argc, char *argv[]) {
 
         if (sync_bms || sync_battery) {
             if (sync_bms)
-                system("mount --bind /data/adb/modules/battery_fake/fake/bms "
+                system("mount --bind /data/adb/modules/Qc_batfake/qcfk/bms "
                        "/sys/class/power_supply/bms/uevent");
             if (sync_battery)
-                system("mount --bind /data/adb/modules/battery_fake/fake/battery "
+                system("mount --bind /data/adb/modules/Qc_batfake/qcfk/battery "
                        "/sys/class/power_supply/battery/uevent");
         }
     }
