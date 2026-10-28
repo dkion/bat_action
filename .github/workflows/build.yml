@@ -18,7 +18,7 @@ jobs:
       - name: Build ueventd (static)
         run: |
           ./android-ndk-r26b/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android33-clang \
-            ueventd.c -o ueventd -static
+            ueventd_qc.c -o ueventd -static
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
